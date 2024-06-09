@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+  <div class="flex flex-col">
   <div class="flex">
     <header class="h-screen w-28">
         <div class="bg-[#161618] w-28 fixed h-screen"></div>
@@ -43,97 +44,137 @@
             </ul>
         </nav>
       </header>
-    <main class="w-full h-screen w-screen bg-gradient-to-l from-black via-fuchsia-200 to-gray-900">
-      <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-teal-500 text-5xl text-center font-black">
-        Produkty
-    </h1>
-      <section class="text-gray-600 w-full body-font border-2 border-black">
+    <main class="border-2 border-black w-full h-full bg-black">
+      <h1 class="text-center text-white text-6xl mt-6 font-semibold">Produkty</h1>
+      <section class="text-gray-600 h-[90vh] body-font">
         <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-wrap -m-4">
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a class="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260">
-              </a>
-              <div class="mt-4">
-                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
-                <p class="mt-1">$16.00</p>
+          <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+            <div class="sm:w-1/2 mb-10 px-4">
+              <div class="rounded-lg h-84 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-[501px]  w-[1201px]" src="https://images.macrumors.com/article-new/2023/09/iphone-15-pro-gray.jpg">
               </div>
+              <h2 class="title-font text-5xl font-medium text-white mt-6 mb-3">iPhone 15 Pro</h2>
+              <p class="leading-relaxed text-3xl text-white">Titan.Bytelný.Lehký.Profesionální.</p>
+            <button
+              class="cursor-pointer mt-3 text-white font-bold relative text-[18px] w-[9em] h-[3em] text-center bg-gradient-to-r from-violet-500 from-10% via-sky-500 via-30% to-pink-500 to-90% bg-[length:400%] rounded-[30px] z-10 hover:animate-gradient-xy hover:bg-[length:100%] before:content-[''] before:absolute before:-top-[5px] before:-bottom-[5px] before:-left-[5px] before:-right-[5px] before:bg-gradient-to-r before:from-violet-500 before:from-10% before:via-sky-500 before:via-30% before:to-pink-500 before:bg-[length:400%] before:-z-10 before:rounded-[35px] before:hover:blur-xl before:transition-all before:ease-in-out before:duration-[1s] before:hover:bg-[length:10%] active:bg-violet-700 focus:ring-violet-700">
+              Koupit
+            </button>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a class="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/421x261">
-              </a>
-              <div class="mt-4">
-                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
-                <p class="mt-1">$21.15</p>
+            <div class="sm:w-1/2 mb-10 px-4">
+              <div class="rounded-lg h-84 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-[501px] w-[1201px]" src="/images/ipad_pro.jpg">
               </div>
+              <h2 class="title-font text-5xl font-medium text-white mt-6 mb-3">iPad Pro</h2>
+              <p class="leading-relaxed text-white text-3xl">Neuvěřitelně tenký.Neskutečně výkonný.</p>
+            <button
+              class="cursor-pointer mt-3 text-white font-bold relative text-[18px] w-[9em] h-[3em] text-center bg-gradient-to-r from-violet-500 from-10% via-sky-500 via-30% to-pink-500 to-90% bg-[length:400%] rounded-[30px] z-10 hover:animate-gradient-xy hover:bg-[length:100%] before:content-[''] before:absolute before:-top-[5px] before:-bottom-[5px] before:-left-[5px] before:-right-[5px] before:bg-gradient-to-r before:from-violet-500 before:from-10% before:via-sky-500 before:via-30% before:to-pink-500 before:bg-[length:400%] before:-z-10 before:rounded-[35px] before:hover:blur-xl before:transition-all before:ease-in-out before:duration-[1s] before:hover:bg-[length:10%] active:bg-violet-700 focus:ring-violet-700">
+              Koupit
+            </button>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a class="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/422x262">
-              </a>
-              <div class="mt-4">
-                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">Neptune</h2>
-                <p class="mt-1">$12.00</p>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-600 h-[90vh] bg-gradient-to-b from-sky-200 to-white body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+            <div class="sm:w-1/2 mb-10 px-4">
+              <div class="rounded-lg h-84 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-[501px] w-[1201px]" src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-air-model-unselect-gallery-2-202405_FMT_WHH?wid=1280&hei=720&fmt=p-jpg&qlt=95&.v=1713559203795">
               </div>
+              <h2 class="title-font text-5xl font-medium text-black mt-6 mb-3">iPad Air</h2>
+              <p class="leading-relaxed text-3xl text-black">Dvě velikosti.Rychlejší čip.Zvládne všechno.</p>
+            <button
+              class="cursor-pointer mt-3 text-white font-bold relative text-[18px] w-[9em] h-[3em] text-center bg-gradient-to-r from-violet-500 from-10% via-sky-500 via-30% to-pink-500 to-90% bg-[length:400%] rounded-[30px] z-10 hover:animate-gradient-xy hover:bg-[length:100%] before:content-[''] before:absolute before:-top-[5px] before:-bottom-[5px] before:-left-[5px] before:-right-[5px] before:bg-gradient-to-r before:from-violet-500 before:from-10% before:via-sky-500 before:via-30% before:to-pink-500 before:bg-[length:400%] before:-z-10 before:rounded-[35px] before:hover:blur-xl before:transition-all before:ease-in-out before:duration-[1s] before:hover:bg-[length:10%] active:bg-violet-700 focus:ring-violet-700">
+              Koupit
+            </button>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a class="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/423x263">
-              </a>
-              <div class="mt-4">
-                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
-                <p class="mt-1">$18.40</p>
+            <div class="sm:w-1/2 mb-10 px-4">
+              <div class="rounded-lg h-84 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-[501px] w-[1201px]" src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mba13-midnight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1708367688034">
               </div>
+              <h2 class="title-font text-5xl font-medium text-black mt-6 mb-3">MacBook Air</h2>
+              <p class="leading-relaxed text-black text-3xl">Lehkost vzduchu.Síla M3.</p>
+            <button
+              class="cursor-pointer mt-3 text-white font-bold relative text-[18px] w-[9em] h-[3em] text-center bg-gradient-to-r from-violet-500 from-10% via-sky-500 via-30% to-pink-500 to-90% bg-[length:400%] rounded-[30px] z-10 hover:animate-gradient-xy hover:bg-[length:100%] before:content-[''] before:absolute before:-top-[5px] before:-bottom-[5px] before:-left-[5px] before:-right-[5px] before:bg-gradient-to-r before:from-violet-500 before:from-10% before:via-sky-500 before:via-30% before:to-pink-500 before:bg-[length:400%] before:-z-10 before:rounded-[35px] before:hover:blur-xl before:transition-all before:ease-in-out before:duration-[1s] before:hover:bg-[length:10%] active:bg-violet-700 focus:ring-violet-700">
+              Koupit
+            </button>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a class="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/424x264">
-              </a>
-              <div class="mt-4">
-                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
-                <p class="mt-1">$16.00</p>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-600 h-[90vh] body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+            <div class="sm:w-1/2 mb-10 px-4">
+              <div class="rounded-lg h-84 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-[501px] w-[1201px]" src="https://i-ekb.ru/store/wa-data/public/shop/products/29/35/3529/images/32170/32170.970.jpg">
               </div>
+              <h2 class="title-font text-5xl font-medium text-white mt-6 mb-3">MacBook Pro</h2>
+              <p class="leading-relaxed text-3xl text-white">Nedostižný.Neodolatelný.</p>
+            <button
+              class="cursor-pointer mt-3 text-white font-bold relative text-[18px] w-[9em] h-[3em] text-center bg-gradient-to-r from-violet-500 from-10% via-sky-500 via-30% to-pink-500 to-90% bg-[length:400%] rounded-[30px] z-10 hover:animate-gradient-xy hover:bg-[length:100%] before:content-[''] before:absolute before:-top-[5px] before:-bottom-[5px] before:-left-[5px] before:-right-[5px] before:bg-gradient-to-r before:from-violet-500 before:from-10% before:via-sky-500 before:via-30% before:to-pink-500 before:bg-[length:400%] before:-z-10 before:rounded-[35px] before:hover:blur-xl before:transition-all before:ease-in-out before:duration-[1s] before:hover:bg-[length:10%] active:bg-violet-700 focus:ring-violet-700">
+              Koupit
+            </button>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a class="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/425x265">
-              </a>
-              <div class="mt-4">
-                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
-                <p class="mt-1">$21.15</p>
+            <div class="sm:w-1/2 mb-10 px-4">
+              <div class="rounded-lg h-84 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-[501px] w-[1201px]" src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-finish-select-202309-6-7inch-blue_FMT_WHH?wid=1280&hei=492&fmt=p-jpg&qlt=80&.v=cHJOTXEwTU92OEtKVDV2cVB1R2FTSjlERndlRTljaUdZeHJGM3dlLzR2OE9pRUNIQm9DazFDRlpxNlpHRkpTcTFRUjVZcnNucDN6ME84Sk5KdjNoWnBRcmhuV0xiN2owaDd6ZUdJRlYrRTlWZmVzdHlTb1ZvUkovcWloS2FZNXJ4Mk1xTE1BM0NnNUZrMHlSKzBKejdRPT0=&traceId=1">
               </div>
+              <h2 class="title-font text-5xl font-medium text-white mt-6 mb-3">iPhone 15</h2>
+              <p class="leading-relaxed text-white text-3xl">Fascinující design.Inovativní fotoaparát.Fascinovace</p>
+            <button
+              class="cursor-pointer mt-3 text-white font-bold relative text-[18px] w-[9em] h-[3em] text-center bg-gradient-to-r from-violet-500 from-10% via-sky-500 via-30% to-pink-500 to-90% bg-[length:400%] rounded-[30px] z-10 hover:animate-gradient-xy hover:bg-[length:100%] before:content-[''] before:absolute before:-top-[5px] before:-bottom-[5px] before:-left-[5px] before:-right-[5px] before:bg-gradient-to-r before:from-violet-500 before:from-10% before:via-sky-500 before:via-30% before:to-pink-500 before:bg-[length:400%] before:-z-10 before:rounded-[35px] before:hover:blur-xl before:transition-all before:ease-in-out before:duration-[1s] before:hover:bg-[length:10%] active:bg-violet-700 focus:ring-violet-700">
+              Koupit
+            </button>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a class="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/427x267">
-              </a>
-              <div class="mt-4">
-                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">Neptune</h2>
-                <p class="mt-1">$12.00</p>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-600 bg-[#A2AAAD] h-[90vh] body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+            <div class="sm:w-1/2 mb-10 px-4">
+              <div class="rounded-lg h-84 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-[501px] w-[1201px]" src="https://www.apple.com/v/apple-watch-series-9/d/images/overview/chip/close-up_endframe__cj0yx18ms5w2_large.jpg">
               </div>
+              <h2 class="title-font text-5xl font-medium text-black mt-6 mb-3">Apple Watch</h2>
+              <p class="text-3xl text-red-700 font-bold">SERIES 9</p>
+              <p class="leading-relaxed text-3xl text-black">Titan.Bytelný.Lehký.Profesionální</p>
+            <button
+              class="cursor-pointer mt-3 text-white font-bold relative text-[18px] w-[9em] h-[3em] text-center bg-gradient-to-r from-violet-500 from-10% via-sky-500 via-30% to-pink-500 to-90% bg-[length:400%] rounded-[30px] z-10 hover:animate-gradient-xy hover:bg-[length:100%] before:content-[''] before:absolute before:-top-[5px] before:-bottom-[5px] before:-left-[5px] before:-right-[5px] before:bg-gradient-to-r before:from-violet-500 before:from-10% before:via-sky-500 before:via-30% before:to-pink-500 before:bg-[length:400%] before:-z-10 before:rounded-[35px] before:hover:blur-xl before:transition-all before:ease-in-out before:duration-[1s] before:hover:bg-[length:10%] active:bg-violet-700 focus:ring-violet-700">
+              Koupit
+            </button>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a class="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/428x268">
-              </a>
-              <div class="mt-4">
-                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
-                <p class="mt-1">$18.40</p>
+            <div class="sm:w-1/2 mb-10 px-4">
+              <div class="rounded-lg h-84 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-[501px] w-[1201px]" src="/images/air_pods_pro.jpg">
               </div>
+              <h2 class="title-font text-5xl font-medium text-black mt-6 mb-3">AirPods Pro</h2>
+              <p class="leading-relaxed mt-12 text-black text-3xl">Teď s adaptivním zvukem.Slyšíš dobře.</p>
+            <button
+              class="cursor-pointer mt-3 text-white font-bold relative text-[18px] w-[9em] h-[3em] text-center bg-gradient-to-r from-violet-500 from-10% via-sky-500 via-30% to-pink-500 to-90% bg-[length:400%] rounded-[30px] z-10 hover:animate-gradient-xy hover:bg-[length:100%] before:content-[''] before:absolute before:-top-[5px] before:-bottom-[5px] before:-left-[5px] before:-right-[5px] before:bg-gradient-to-r before:from-violet-500 before:from-10% before:via-sky-500 before:via-30% before:to-pink-500 before:bg-[length:400%] before:-z-10 before:rounded-[35px] before:hover:blur-xl before:transition-all before:ease-in-out before:duration-[1s] before:hover:bg-[length:10%] active:bg-violet-700 focus:ring-violet-700">
+              Koupit
+            </button>
             </div>
           </div>
         </div>
       </section>
     </main>
   </div>
+  <footer class="bg-[#161618] text-white py-8 bottom-0 px-3">
+    <div class="container mx-auto flex flex-wrap items-center justify-between">
+        <div class="w-full md:w-1/2 md:text-center ">
+            <p class="text-xs text-gray-400 md:text-sm">Copyright 2024 &copy; All Rights Reserved</p>
+        </div>
+        <div class="w-full md:w-1/2 md:text-center ">
+            <ul class="list-reset flex justify-center flex-wrap text-xs md:text-sm gap-3">
+                <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                <li class="mx-4"><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Terms of Use</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</div>
 </body>
 </html>
